@@ -6,8 +6,13 @@ export default createStore({
   getters: {
   },
   mutations: {
+    
   },
   actions: {
+    modifierLivre(context, livre){
+let livreModif = [...context.state.   , livre];
+
+    }
   },
   modules: {
   }
