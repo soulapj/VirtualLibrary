@@ -6,11 +6,16 @@ export default createStore({
     document: []
   },
   mutations: {
+
+  },
+  actions: {
+    modifierLivre(context, livre){
+let livreModif = [...context.state.   , livre];
+
+    }
     setDocument(state, val){
       state.document = val;
     }
-  },
-  actions: {
     appelApi({ commit }, query = null){
       let url = "https://openlibrary.org/api/search.json";
       if (query) {
