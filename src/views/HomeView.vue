@@ -37,7 +37,7 @@ export default {
     },
   },
   mounted() {
-    this.getBookList();
+    this.$store.dispatch('appelApi');
   },
 };
 </script>
